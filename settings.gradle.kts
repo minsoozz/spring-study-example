@@ -3,3 +3,4 @@ plugins {
 }
 rootProject.name = "spring-study-example"
 include("micrometer")
+include("batch")
