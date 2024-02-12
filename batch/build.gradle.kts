@@ -24,6 +24,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     runtimeOnly("com.h2database:h2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    // 프로메테우스 관련 라이브러리 추가
+    implementation("io.micrometer:micrometer-registry-prometheus")
+    implementation("io.prometheus:simpleclient_pushgateway")
 }
 
 tasks.withType<KotlinCompile> {
